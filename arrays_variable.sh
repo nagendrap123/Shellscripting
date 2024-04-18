@@ -13,3 +13,9 @@ echo "${applications[0]}"
 echo "${applications[1]}"
 echo "${applications[2]}"
 echo "${applications[@]}"
+
+#updating or adding in arrays
+applications+=("apps4" "apps5")
+echo "${applications[3]}"
+echo "${applications[4]}"
+echo "${applications[@]}"
