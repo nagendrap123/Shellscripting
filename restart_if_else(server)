@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# This script checks if the web server is running, and if not, it starts the server.
+
+# Define the name of the web server process
+web_server="nginx"  # Assuming Apache nginx Server
+
+# Check if the web server process is running
+if pgrep -x "$web_server" >/dev/null
+then
+    echo "Web server ($web_server) is running."
+else
+    echo "Web server ($web_server) is not running. Starting the server..."
+    # Start the web server
+    systemctl start "$web_server"
+    if [ $? -eq 0 ]; then
+        echo "Web server ($web_server) started successfully."
+    else
+        echo "Failed to start the web server ($web_server)."
+    fi
+fi
