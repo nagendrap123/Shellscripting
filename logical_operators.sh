@@ -7,3 +7,4 @@ then
 echo "you can vote"
 else 
 echo "tou cant vote"
+fi
