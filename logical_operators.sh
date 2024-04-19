@@ -1,7 +1,7 @@
 #!/bin/bash
 #AND operator
-echo "enter your age:" age
-echo "enter your country:" country
+echo -p "enter your age:" age
+echo -p "enter your country:" country
 if [ $age -ge 18 ] && [ $country == "india" ]
 then 
 echo "you can vote"
