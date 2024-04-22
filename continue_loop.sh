@@ -4,7 +4,7 @@
 for i in {1..20}
 do 
 let r=$i%2
-if [ r -eq 0 ]
+if [ $r -eq 0 ]
 then 
 continue
 fi
