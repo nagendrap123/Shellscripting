@@ -7,6 +7,7 @@ do
 if [ $no -eq $i ]
 then 
 echo "number is $no found"
+break
 fi 
 echo "number is $i"
 done 
