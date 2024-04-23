@@ -1,0 +1,6 @@
+#!/bin/bash
+date
+ls
+cd /root
+pwd
+
