@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "enter the site name: " site
-ping -c 1 $site
+ping -c 1 $site &>/dev/null
 if [ $? -eq 0 ]
 then 
 echo "the site connected successful $site"
