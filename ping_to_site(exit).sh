@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "name of the file $0"
+echo "name of the file ${0}"
 read -p "enter the site name: " site
 ping -c 1 $site &>/dev/null
 if [ $? -eq 0 ]
