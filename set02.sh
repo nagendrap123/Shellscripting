@@ -4,7 +4,7 @@
 set -o pipefail
 
 # Perform a pipeline operation
-cat non_existent_file.txt | grep "pattern" | sort
+cat set01.sh | grep "pattern" | sort
 
 # Check the exit status of the pipeline
 if [ $? -ne 0 ]; then
