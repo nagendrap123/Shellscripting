@@ -4,7 +4,7 @@
 set -o pipefail
 
 # Perform a pipeline operation
-cat set01.sh | grep "pattern" | sort
+cat  $1 | grep "pattern" | sort
 
 # Check the exit status of the pipeline
 if [ $? -ne 0 ]; then
